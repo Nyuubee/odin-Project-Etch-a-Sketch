@@ -20,7 +20,10 @@ function createGrid(size) {
         const gridSquare = document.createElement("div");
         gridSquare.classList.add("grid-square");
         gridSquare.setAttribute("style", `height: ${percentage}%; width: ${percentage}%;`);
+
         gridSquare.addEventListener("mouseenter", () => {
+            let currentOpacity = parseFloat(gridSquare.style.opacity) || 0;
+            gridSquare.style.opacity = Math.min(1, currentOpacity + 0.1);
             gridSquare.style.backgroundColor = chosenColor;
             clearButton.classList.toggle("state", true);
         })

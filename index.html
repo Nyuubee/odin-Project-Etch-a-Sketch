@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="control-panel">
+        <label for="grid-size">Grid Size:</label>
+        <input type="number" id="grid-size" min="1" max="100" value="16">
+        <button id="submit-button">Create Grid</button>
+
+        <label for="colorPicker">Color picker:</label>
+        <input type="color" id="color-picker" name="colorPicker" value="red">
+    </div>
+    <button id="clear-button">Clear</button>
+    <div class="grid-container">
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
